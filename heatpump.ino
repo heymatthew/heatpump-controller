@@ -1,17 +1,11 @@
 // based on
-// https://github.com/tiegz/Spark-Core-IRremote
-// https://github.com/r45635/HVAC-IR-Control
+//    https://github.com/tiegz/Spark-Core-IRremote
+//    https://github.com/r45635/HVAC-IR-Control
 
 #include "IRremote.h"
 
-#define NUM_0 48
-#define NUM_1 49
-#define NUM_2 50
-#define ENTER 10
-
 IRsend irsend(D3);
 int led = D7;
-int msDelay = 5000;
 
 int run(String command) {
   int temperature = command.toInt();
